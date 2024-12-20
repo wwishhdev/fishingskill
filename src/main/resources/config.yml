@@ -1,0 +1,18 @@
+# Configuración de recompensas de pesca
+rewards:
+# Ejemplo de formato:
+# '1':
+#   chance: 50.0
+#   amount: 1
+#   item: serialized-item-here
+
+# Configuración del cooldown
+cooldown:
+  enabled: true
+  time: 2000 # Tiempo en milisegundos (1.5 segundos por defecto)
+  message: "&c¡Debes esperar antes de volver a pescar!"
+# Configuración anti-cheat
+anti-cheat:
+  enabled: true
+  check-radius: 0.5 # Radio en bloques para verificar el agua
+  water-check-points: 4 # Número de puntos a verificar en el radio

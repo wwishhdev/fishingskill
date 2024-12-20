@@ -1,0 +1,29 @@
+name: FishingSkill
+version: '1.0-release'
+main: com.wish.fishingskill.FishingSkill
+author: Wish
+description: Plugin de pesca con recompensas personalizables
+
+commands:
+  fskill:
+    description: Comando principal del plugin
+    usage: |
+      /<command> add - Agrega el item en tu mano como recompensa
+      /<command> remove <id> - Elimina una recompensa
+      /<command> list - Muestra la lista de recompensas
+      /<command> reload - Recarga la configuración
+      /<command> chance <id> <probabilidad> - Modifica la probabilidad de un item
+    aliases: [fs]
+    permission: fishingskill.admin
+  fishing:
+    description: Muestra las recompensas disponibles
+    usage: /<command> rewards
+    aliases: [fish]
+
+permissions:
+  fishingskill.admin:
+    description: Permite usar todos los comandos del plugin
+    default: op
+  fishingskill.rewards:
+    description: Permite ver las recompensas disponibles
+    default: true
